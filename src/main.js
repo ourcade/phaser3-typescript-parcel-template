@@ -2,7 +2,7 @@ import Phaser from 'phaser'
 
 import HelloWorldScene from './scenes/HelloWorldScene'
 
-var config = {
+const config = {
 	type: Phaser.AUTO,
 	width: 800,
 	height: 600,
