@@ -1,0 +1,21 @@
+{
+	"name": "phaser3-parcel-template",
+	"version": "1.0.0",
+	"description": "A template project for Phaser3 using Parceljs",
+	"scripts": {
+		"start": "parcel public/index.html -p 8000",
+		"build": "parcel build public/index.html --out-dir dist",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "supertommy",
+	"license": "MIT",
+	"devDependencies": {
+		"parcel-plugin-clean-easy": "^1.0.2"
+	},
+	"dependencies": {
+		"phaser": "^3.21.0"
+	},
+	"parcelCleanPaths": [
+		"dist"
+	]
+}
