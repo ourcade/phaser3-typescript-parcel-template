@@ -29,7 +29,7 @@ Then install Parcel:
 $ npm install -g parcel-bundler
 ```
 
-## Quick Start
+## Getting Started
 
 Clone this repository to your local machine:
 
