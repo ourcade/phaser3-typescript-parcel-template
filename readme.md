@@ -29,7 +29,7 @@ Then install Parcel:
 $ npm install -g parcel-bundler
 ```
 
-## Quick Start
+## Getting Started
 
 Clone this repository to your local machine:
 
@@ -56,3 +56,84 @@ $ npm run build
 ```
 
 Production files will be placed in the `dist` folder. Then upload those files to a web server. 🎉
+
+## Project Structure
+
+```
+    .
+    ├── dist
+    ├── node_modules
+    ├── public
+    │   ├── index.html
+    ├── src
+    │   ├── scenes
+    │   │   ├── HelloWorldScene.js
+    │   ├── main.js
+    ├── package.json
+```
+
+The contents of this template is the basic [Phaser3 getting started example](http://phaser.io/tutorials/getting-started-phaser3/part5).
+
+This template assumes you will want to organize your code into multiple files and use modern JavaScript (or TypeScript).
+
+JavaScript files are intended for the `src` folder. An `index.html` exists in the `public` folder. `main.js` is the entry point.
+
+Other than that there is no opinion on how you should structure your project. There is a `scenes` folder in `src` where the `HelloWorldScene.js` lives but you can do whatever you want.
+
+## TypeScript
+
+It just works. (Thanks to Parcel)
+
+You can rename all the `.js` files to `.ts` and start using TypeScript.
+
+You may also want to add a `tsconfig.json` file to the project root like this:
+
+```
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"strict": true,
+		"noImplicitAny": false,
+		"noEmit": true,
+		"allowJs": true,
+		"jsx": "preserve",
+		"importHelpers": true,
+		"moduleResolution": "node",
+		"experimentalDecorators": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true
+	}
+}
+```
+
+[More information on `tsconfig.json` options here.](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
+
+## Flow
+
+It just works. (Thanks to Parcel)
+
+Just put `// @flow` at the top of your `.js` files. Parcel will handle the rest.
+
+[Go here for more information on how to use Flow](https://flow.org/).
+
+## Dev Server Port
+
+You can change the dev server's port number by modifying the `start` script in `package.json`. We use Parcel's `-p` option to specify the port number.
+
+This script looks like this:
+
+```
+parcel public/index.html -p 8000
+```
+
+Change 8000 to whatever you want.
+
+## Other Notes
+
+This template uses [parcel-plugin-clean-easy](https://github.com/lifuzhao100/parcel-plugin-clean-easy) to ensure only the latest files are in the `dist` folder. You can modify this behavior by changing `parcelCleanPaths` in `package.json`.
+
+## License
+
+[MIT License](https://github.com/ourcade/phaser3-parcel-template/blob/master/LICENSE)
