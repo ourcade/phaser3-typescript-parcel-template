@@ -56,3 +56,7 @@ $ npm run build
 ```
 
 Production files will be placed in the `dist` folder. Then upload those files to a web server. 🎉
+
+## License
+
+[MIT License](https://github.com/ourcade/phaser3-parcel-template/blob/master/LICENSE)
