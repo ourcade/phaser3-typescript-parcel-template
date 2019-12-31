@@ -110,6 +110,29 @@ You may also want to add a `tsconfig.json` file to the project root like this:
 
 [More information on `tsconfig.json` options here.](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
 
+## Flow
+
+It just works. (Thanks to Parcel)
+
+Just put `// @flow` at the top of your `.js` files. Parcel will handle the rest.
+
+[Go here for more information on how to use Flow](https://flow.org/).
+
+## Dev Server Port
+
+You can change the dev server's port number by modifying the `start` script in `package.json`. We use Parcel's `-p` option to specify the port number.
+
+This script looks like this:
+
+```
+parcel public/index.html -p 8000
+```
+
+Change 8000 to whatever you want.
+
+## Other Notes
+
+This template uses [parcel-plugin-clean-easy](https://github.com/lifuzhao100/parcel-plugin-clean-easy) to ensure only the latest files are in the `dist` folder. You can modify this behavior by changing `parcelCleanPaths` in `package.json`.
 
 ## License
 
