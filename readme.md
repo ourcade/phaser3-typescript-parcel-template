@@ -3,7 +3,7 @@
 # Phaser3 + Parceljs Template
 > Create fun Phaser3 games at blazing speed using Parceljs during development and for production builds.
 
-![License](https://img.shields.io/badge/license-MIT-green)]
+![License](https://img.shields.io/badge/license-MIT-green)
 
 ## Quick Start
 
