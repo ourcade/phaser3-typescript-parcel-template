@@ -15,44 +15,51 @@ For Windows users there is [Node Version Manager for Windows](https://github.com
 
 Install Node.js and `npm` with `nvm`:
 
-```
-$ nvm install node
+```bash
+nvm install node
 
-$ nvm use node
+nvm use node
 ```
 
 Replace 'node' with 'latest' for `nvm-windows`.
 
 Then install Parcel:
 
-```
-$ npm install -g parcel-bundler
+```bash
+npm install -g parcel-bundler
 ```
 
 ## Getting Started
 
 Clone this repository to your local machine:
 
-```
-$ git clone https://github.com/ourcade/phaser3-parcel-template.git
+```bash
+git clone https://github.com/ourcade/phaser3-parcel-template.git
 ```
 
-Then install dependencies:
+This will create a folder named `phaser3-parcel-template`. You can specify a different folder name like this:
 
+```bash
+git clone https://github.com/ourcade/phaser3-parcel-template.git my-folder-name
 ```
-$ npm install
+
+Go into your new project folder and install dependencies:
+
+```bash
+cd phaser3-parcel-template # or 'my-folder-name'
+npm install
 ```
 
 Start development server:
 
 ```
-$ npm run start
+npm run start
 ```
 
 To create a production build:
 
 ```
-$ npm run build
+npm run build
 ```
 
 Production files will be placed in the `dist` folder. Then upload those files to a web server. 🎉
