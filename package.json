@@ -10,12 +10,17 @@
 	"author": "supertommy",
 	"license": "MIT",
 	"devDependencies": {
-		"parcel-plugin-clean-easy": "^1.0.2"
+		"parcel-plugin-clean-easy": "^1.0.2",
+		"parcel-plugin-static-files-copy": "^2.2.1"
 	},
 	"dependencies": {
 		"phaser": "^3.21.0"
 	},
 	"parcelCleanPaths": [
 		"dist"
-	]
+	],
+	"staticFiles": {
+        "staticPath": "public",
+        "watcherGlob": "**"
+    }
 }
