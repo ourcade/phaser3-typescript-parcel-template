@@ -74,7 +74,7 @@ Production files will be placed in the `dist` folder. Then upload those files to
     ├── src
     │   ├── scenes
     │   │   ├── HelloWorldScene.js
-	│   ├── index.html
+    │   ├── index.html
     │   ├── main.js
     ├── package.json
 ```
