@@ -71,10 +71,10 @@ Production files will be placed in the `dist` folder. Then upload those files to
     ├── dist
     ├── node_modules
     ├── public
-    │   ├── index.html
     ├── src
     │   ├── scenes
     │   │   ├── HelloWorldScene.js
+	│   ├── index.html
     │   ├── main.js
     ├── package.json
 ```
@@ -83,7 +83,9 @@ The contents of this template is the basic [Phaser3 getting started example](htt
 
 This template assumes you will want to organize your code into multiple files and use modern JavaScript (or TypeScript).
 
-JavaScript files are intended for the `src` folder. An `index.html` exists in the `public` folder. `main.js` is the entry point.
+JavaScript files are intended for the `src` folder. `main.js` is the entry point referenced by `index.html`.
+
+Place any static assets like textures and audio in the `public` folder. They can then be loaded by Phaser with `this.image.load('image', 'path/to/image.png')`.
 
 Other than that there is no opinion on how you should structure your project. There is a `scenes` folder in `src` where the `HelloWorldScene.js` lives but you can do whatever you want.
 
@@ -110,12 +112,19 @@ You may also want to add a `tsconfig.json` file to the project root like this:
 		"experimentalDecorators": true,
 		"esModuleInterop": true,
 		"allowSyntheticDefaultImports": true,
-		"sourceMap": true
+		"sourceMap": true,
+		"baseUrl": "./src",
+		"paths": {
+		  "~/*": ["./*"]
+		},
+		"typeRoots": ["node_modules/@types"]
 	}
 }
 ```
 
 [More information on `tsconfig.json` options here.](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
+
+[Note on how Parcel handles `baseUrl` and `paths`.](https://gist.github.com/croaky/e3394e78d419475efc79c1e418c243ed)
 
 ## Flow
 
@@ -129,10 +138,10 @@ Just put `// @flow` at the top of your `.js` files. Parcel will handle the rest.
 
 You can change the dev server's port number by modifying the `start` script in `package.json`. We use Parcel's `-p` option to specify the port number.
 
-This script looks like this:
+The script looks like this:
 
 ```
-parcel public/index.html -p 8000
+parcel src/index.html -p 8000
 ```
 
 Change 8000 to whatever you want.
