@@ -89,6 +89,23 @@ Place any static assets like textures and audio in the `public` folder. They can
 
 Other than that there is no opinion on how you should structure your project. There is a `scenes` folder in `src` where the `HelloWorldScene.js` lives but you can do whatever you want.
 
+## Static Assets
+
+Any static assets like images or audio files should be placed in the `public` folder. It'll then be served at http://localhost:8000/images/my-image.png
+
+Example `public` structure:
+
+```
+    public
+    ├── images
+    │   ├── my-image.png
+    ├── music
+    │   ├── ...
+    ├── sfx
+    │   ├── ...
+    ├── index.html
+```
+
 ## TypeScript
 
 It just works. (Thanks to Parcel)
@@ -148,7 +165,9 @@ Change 8000 to whatever you want.
 
 ## Other Notes
 
-This template uses [parcel-plugin-clean-easy](https://github.com/lifuzhao100/parcel-plugin-clean-easy) to ensure only the latest files are in the `dist` folder. You can modify this behavior by changing `parcelCleanPaths` in `package.json`.
+[parcel-plugin-clean-easy](https://github.com/lifuzhao100/parcel-plugin-clean-easy) is used to ensure only the latest files are in the `dist` folder. You can modify this behavior by changing `parcelCleanPaths` in `package.json`.
+
+[parcel-plugin-static-files](https://github.com/elwin013/parcel-plugin-static-files-copy#readme) is used to copy static files from `public` into the output directory and serve it. You can add additional paths by modifying `staticFiles` in `package.json`.
 
 ## License
 
