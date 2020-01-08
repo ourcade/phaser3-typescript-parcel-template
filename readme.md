@@ -133,7 +133,13 @@ You may also want to add a `tsconfig.json` file to the project root like this:
 		"paths": {
 		  "~/*": ["./*"]
 		},
-		"typeRoots": ["node_modules/@types"]
+		"typeRoots": [
+			"node_modules/@types",
+			"node_module/phaser/types"
+		],
+		"types": [
+			"Phaser"
+		]
 	}
 }
 ```
