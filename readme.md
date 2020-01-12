@@ -74,7 +74,7 @@ Production files will be placed in the `dist` folder. Then upload those files to
     ├── src
     │   ├── scenes
     │   │   ├── HelloWorldScene.js
-	│   ├── index.html
+    │   ├── index.html
     │   ├── main.js
     ├── package.json
 ```
@@ -84,8 +84,6 @@ The contents of this template is the basic [Phaser3 getting started example](htt
 This template assumes you will want to organize your code into multiple files and use modern JavaScript (or TypeScript).
 
 JavaScript files are intended for the `src` folder. `main.js` is the entry point referenced by `index.html`.
-
-Place any static assets like textures and audio in the `public` folder. They can then be loaded by Phaser with `this.image.load('image', 'path/to/image.png')`.
 
 Other than that there is no opinion on how you should structure your project. There is a `scenes` folder in `src` where the `HelloWorldScene.js` lives but you can do whatever you want.
 
@@ -103,8 +101,9 @@ Example `public` structure:
     │   ├── ...
     ├── sfx
     │   ├── ...
-    ├── index.html
 ```
+
+They can then be loaded by Phaser with `this.image.load('my-image', 'images/my-image.png')`.
 
 ## TypeScript
 
@@ -134,7 +133,13 @@ You may also want to add a `tsconfig.json` file to the project root like this:
 		"paths": {
 		  "~/*": ["./*"]
 		},
-		"typeRoots": ["node_modules/@types"]
+		"typeRoots": [
+			"node_modules/@types",
+			"node_module/phaser/types"
+		],
+		"types": [
+			"Phaser"
+		]
 	}
 }
 ```
