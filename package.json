@@ -19,13 +19,13 @@
 		"parcel-plugin-static-files-copy": "^2.2.1"
 	},
 	"dependencies": {
-		"phaser": "^3.21.0"
+		"phaser": "^3.22.0"
 	},
 	"parcelCleanPaths": [
 		"dist"
 	],
 	"staticFiles": {
-        "staticPath": "public",
-        "watcherGlob": "**"
-    }
+		"staticPath": "public",
+		"watcherGlob": "**"
+	}
 }
