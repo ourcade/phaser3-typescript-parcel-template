@@ -140,7 +140,10 @@ You may also want to add a `tsconfig.json` file to the project root like this:
 		"types": [
 			"Phaser"
 		]
-	}
+	},
+	"include": [
+		"src/**/*"
+	]
 }
 ```
 
