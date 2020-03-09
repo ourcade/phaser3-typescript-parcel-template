@@ -116,8 +116,8 @@ You may also want to add a `tsconfig.json` file to the project root like this:
 ```
 {
 	"compilerOptions": {
-		"target": "es6",
-		"module": "esnext",
+		"target": "es2016",
+		"module": "es6",
 		"strict": true,
 		"noImplicitAny": false,
 		"noEmit": true,
