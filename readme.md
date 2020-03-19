@@ -138,7 +138,7 @@ You may also want to add a `tsconfig.json` file to the project root like this:
 			"node_module/phaser/types"
 		],
 		"types": [
-			"Phaser"
+			"phaser"
 		]
 	},
 	"include": [
