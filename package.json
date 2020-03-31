@@ -16,7 +16,8 @@
 	"homepage": "https://github.com/ourcade/phaser3-parcel-template",
 	"devDependencies": {
 		"parcel-plugin-clean-easy": "^1.0.2",
-		"parcel-plugin-static-files-copy": "^2.2.1"
+		"parcel-plugin-static-files-copy": "^2.2.1",
+		"minimist": ">=1.2.2"
 	},
 	"dependencies": {
 		"phaser": "^3.22.0"
