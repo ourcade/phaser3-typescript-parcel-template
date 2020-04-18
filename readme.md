@@ -105,6 +105,27 @@ Example `public` structure:
 
 They can then be loaded by Phaser with `this.image.load('my-image', 'images/my-image.png')`.
 
+## Class Properties Support
+
+If you want to use the modern ES6 class properties feature then you'll need to add a `.babelrc` file at the project root with the `@babel/plugin-proposal-class-properties` plugin.
+
+```
+{
+	"presets": [
+		"env"
+	],
+	"plugins": [
+		"@babel/plugin-proposal-class-properties"
+	]
+}
+```
+
+Parcel should automatically install the necessary dependencies.
+
+If you run into an error about mismatched major versions then go into `package.json` to see what the major versions for `@babel/core` and `@babel/plugin-proposal-class-properties` are.
+
+Reinstall one or the other manually to make the versions match 😉
+
 ## TypeScript
 
 It just works. (Thanks to Parcel)
