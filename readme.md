@@ -137,8 +137,8 @@ You may also want to add a `tsconfig.json` file to the project root like this:
 ```
 {
 	"compilerOptions": {
-		"target": "esnext",
-		"module": "esnext",
+		"target": "es2016",
+		"module": "es6",
 		"strict": true,
 		"noImplicitAny": false,
 		"noEmit": true,
@@ -159,9 +159,12 @@ You may also want to add a `tsconfig.json` file to the project root like this:
 			"node_module/phaser/types"
 		],
 		"types": [
-			"Phaser"
+			"phaser"
 		]
-	}
+	},
+	"include": [
+		"src/**/*"
+	]
 }
 ```
 
