@@ -1,9 +1,11 @@
 ![phaser3-parceljs-template](https://user-images.githubusercontent.com/2236153/71606463-37a0da80-2b2e-11ea-9b5f-5d26ccc84f91.png)
 
-# Phaser3 + Parcel Template
+# Phaser3 + TypeScript + Parcel Template
 > For people who want to spend time making games instead of configuring build tools.
 
 ![License](https://img.shields.io/badge/license-MIT-green)
+
+This is a TypeScript specific fork of [phaser3-parcel-template](https://github.com/ourcade/phaser3-parcel-template).
 
 ## Prerequisites
 
@@ -34,19 +36,19 @@ npm install -g parcel-bundler
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/ourcade/phaser3-parcel-template.git
+git clone https://github.com/ourcade/phaser3-typescript-parcel-template.git
 ```
 
-This will create a folder named `phaser3-parcel-template`. You can specify a different folder name like this:
+This will create a folder named `phaser3-typescript-parcel-template`. You can specify a different folder name like this:
 
 ```bash
-git clone https://github.com/ourcade/phaser3-parcel-template.git my-folder-name
+git clone https://github.com/ourcade/phaser3-typescript-parcel-template.git my-folder-name
 ```
 
 Go into your new project folder and install dependencies:
 
 ```bash
-cd phaser3-parcel-template # or 'my-folder-name'
+cd phaser3-typescript-parcel-template # or 'my-folder-name'
 npm install
 ```
 
@@ -73,19 +75,19 @@ Production files will be placed in the `dist` folder. Then upload those files to
     ├── public
     ├── src
     │   ├── scenes
-    │   │   ├── HelloWorldScene.js
+    │   │   ├── HelloWorldScene.ts
     │   ├── index.html
-    │   ├── main.js
+    │   ├── main.ts
     ├── package.json
 ```
 
 The contents of this template is the basic [Phaser3 getting started example](http://phaser.io/tutorials/getting-started-phaser3/part5).
 
-This template assumes you will want to organize your code into multiple files and use modern JavaScript (or TypeScript).
+This template assumes you will want to organize your code into multiple files and use TypeScript.
 
-JavaScript files are intended for the `src` folder. `main.js` is the entry point referenced by `index.html`.
+TypeScript files are intended for the `src` folder. `main.ts` is the entry point referenced by `index.html`.
 
-Other than that there is no opinion on how you should structure your project. There is a `scenes` folder in `src` where the `HelloWorldScene.js` lives but you can do whatever you want.
+Other than that there is no opinion on how you should structure your project. There is a `scenes` folder in `src` where the `HelloWorldScene.ts` lives but you can do whatever you want.
 
 ## Static Assets
 
@@ -104,81 +106,6 @@ Example `public` structure:
 ```
 
 They can then be loaded by Phaser with `this.image.load('my-image', 'images/my-image.png')`.
-
-## Class Properties Support
-
-If you want to use the modern ES6 class properties feature then you'll need to add a `.babelrc` file at the project root with the `@babel/plugin-proposal-class-properties` plugin.
-
-```
-{
-	"presets": [
-		"env"
-	],
-	"plugins": [
-		"@babel/plugin-proposal-class-properties"
-	]
-}
-```
-
-Parcel should automatically install the necessary dependencies.
-
-If you run into an error about mismatched major versions then go into `package.json` to see what the major versions for `@babel/core` and `@babel/plugin-proposal-class-properties` are.
-
-Reinstall one or the other manually to make the versions match 😉
-
-## TypeScript
-
-It just works. (Thanks to Parcel)
-
-You can rename all the `.js` files to `.ts` and start using TypeScript.
-
-You may also want to add a `tsconfig.json` file to the project root like this:
-
-```
-{
-	"compilerOptions": {
-		"target": "es2016",
-		"module": "es6",
-		"strict": true,
-		"noImplicitAny": false,
-		"noEmit": true,
-		"allowJs": true,
-		"jsx": "preserve",
-		"importHelpers": true,
-		"moduleResolution": "node",
-		"experimentalDecorators": true,
-		"esModuleInterop": true,
-		"allowSyntheticDefaultImports": true,
-		"sourceMap": true,
-		"baseUrl": "./src",
-		"paths": {
-		  "~/*": ["./*"]
-		},
-		"typeRoots": [
-			"node_modules/@types",
-			"node_module/phaser/types"
-		],
-		"types": [
-			"phaser"
-		]
-	},
-	"include": [
-		"src/**/*"
-	]
-}
-```
-
-[More information on `tsconfig.json` options here.](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
-
-[Note on how Parcel handles `baseUrl` and `paths`.](https://gist.github.com/croaky/e3394e78d419475efc79c1e418c243ed)
-
-## Flow
-
-It just works. (Thanks to Parcel)
-
-Just put `// @flow` at the top of your `.js` files. Parcel will handle the rest.
-
-[Go here for more information on how to use Flow](https://flow.org/).
 
 ## Dev Server Port
 
@@ -200,4 +127,4 @@ Change 8000 to whatever you want.
 
 ## License
 
-[MIT License](https://github.com/ourcade/phaser3-parcel-template/blob/master/LICENSE)
+[MIT License](https://github.com/ourcade/phaser3-typescript-parcel-template/blob/master/LICENSE)
