@@ -107,6 +107,12 @@ Example `public` structure:
 
 They can then be loaded by Phaser with `this.image.load('my-image', 'images/my-image.png')`.
 
+## TypeScript ESLint
+
+This template uses a basic `typescript-eslint` set up for code linting.
+
+It does not aim to be opinionated.
+
 ## Dev Server Port
 
 You can change the dev server's port number by modifying the `start` script in `package.json`. We use Parcel's `-p` option to specify the port number.
