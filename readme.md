@@ -1,6 +1,6 @@
 ![phaser3-parceljs-template](https://user-images.githubusercontent.com/2236153/71606463-37a0da80-2b2e-11ea-9b5f-5d26ccc84f91.png)
 
-# Phaser3 + TypeScript + Parcel Template
+# Phaser 3 + TypeScript + Parcel Template
 > For people who want to spend time making Phaser 3 games in TypeScript instead of configuring build tools.
 
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -81,7 +81,7 @@ Production files will be placed in the `dist` folder. Then upload those files to
     ├── package.json
 ```
 
-The contents of this template is the basic [Phaser3 getting started example](http://phaser.io/tutorials/getting-started-phaser3/part5).
+The contents of this template is the basic [Phaser 3 getting started example](http://phaser.io/tutorials/getting-started-phaser3/part5).
 
 This template assumes you will want to organize your code into multiple files and use TypeScript.
 

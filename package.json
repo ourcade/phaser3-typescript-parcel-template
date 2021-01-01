@@ -1,7 +1,7 @@
 {
 	"name": "phaser3-parcel-template",
 	"version": "1.0.0",
-	"description": "A template project for Phaser3 using Parceljs",
+	"description": "A typescript template project for Phaser 3 using Parceljs",
 	"scripts": {
 		"start": "parcel src/index.html -p 8000",
 		"build": "parcel build src/index.html --out-dir dist",
@@ -25,7 +25,7 @@
 		"typescript": "^3.8.3"
 	},
 	"dependencies": {
-		"phaser": "^3.24.1"
+		"phaser": "^3.50.1"
 	},
 	"parcelCleanPaths": [
 		"dist"
