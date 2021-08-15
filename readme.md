@@ -25,24 +25,18 @@ nvm use node
 
 Replace 'node' with 'latest' for `nvm-windows`.
 
-Then install Parcel:
-
-```bash
-npm install -g parcel-bundler
-```
-
 ## Getting Started
 
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/ourcade/phaser3-typescript-parcel-template.git
+git clone --depth=1 https://github.com/ourcade/phaser3-typescript-parcel-template.git
 ```
 
 This will create a folder named `phaser3-typescript-parcel-template`. You can specify a different folder name like this:
 
 ```bash
-git clone https://github.com/ourcade/phaser3-typescript-parcel-template.git my-folder-name
+git clone --depth=1 https://github.com/ourcade/phaser3-typescript-parcel-template.git my-folder-name
 ```
 
 Go into your new project folder and install dependencies:
