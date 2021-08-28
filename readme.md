@@ -25,24 +25,18 @@ nvm use node
 
 Replace 'node' with 'latest' for `nvm-windows`.
 
-Then install Parcel:
-
-```bash
-npm install -g parcel-bundler
-```
-
 ## Getting Started
 
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/ourcade/phaser3-typescript-parcel-template.git
+git clone --depth=1 https://github.com/ourcade/phaser3-typescript-parcel-template.git
 ```
 
 This will create a folder named `phaser3-typescript-parcel-template`. You can specify a different folder name like this:
 
 ```bash
-git clone https://github.com/ourcade/phaser3-typescript-parcel-template.git my-folder-name
+git clone --depth=1 https://github.com/ourcade/phaser3-typescript-parcel-template.git my-folder-name
 ```
 
 Go into your new project folder and install dependencies:
@@ -124,12 +118,6 @@ parcel src/index.html -p 8000
 ```
 
 Change 8000 to whatever you want.
-
-## Other Notes
-
-[parcel-plugin-clean-easy](https://github.com/lifuzhao100/parcel-plugin-clean-easy) is used to ensure only the latest files are in the `dist` folder. You can modify this behavior by changing `parcelCleanPaths` in `package.json`.
-
-[parcel-plugin-static-files](https://github.com/elwin013/parcel-plugin-static-files-copy#readme) is used to copy static files from `public` into the output directory and serve it. You can add additional paths by modifying `staticFiles` in `package.json`.
 
 ## License
 
