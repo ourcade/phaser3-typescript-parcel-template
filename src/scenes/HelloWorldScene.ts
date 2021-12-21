@@ -30,7 +30,7 @@ export default class HelloWorldScene extends Phaser.Scene
 
         const logo = this.physics.add.image(400, 100, 'logo')
 
-        logo.setVelocity(100, 200)
+        logo.setVelocity(2000, 2000)
         logo.setBounce(1, 1)
         logo.setCollideWorldBounds(true)
 
