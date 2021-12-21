@@ -27,6 +27,11 @@ export default class tBOI extends Phaser.Scene
         walls.setScale(3);
         ground.setScale(3);
 
+        this.cursors.up = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
+        this.cursors.down = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S);
+        this.cursors.left = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
+        this.cursors.right = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
+
         this.knight = this.physics.add.sprite(128, 128, 'knight', 'knight_m_idle_anim_f0');
         this.knight.setScale(3);
         this.knight.body.setSize(this.knight.width*0.6, this.knight.height*0.2);
@@ -42,6 +47,11 @@ export default class tBOI extends Phaser.Scene
             frames: this.anims.generateFrameNames('knight', { start:0, end:3, prefix:'knight_f_run_anim_f' }),
             repeat: -1,
             frameRate: 15
+        })
+
+        this.anims.create({
+            key: 'knight-hit',
+            frames: [{ key: 'knight', frame:'knight_m_hit_anim_f0'}]
         })
 
         this.physics.add.collider(this.knight, walls);
