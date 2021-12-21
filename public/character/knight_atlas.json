@@ -1,0 +1,242 @@
+{
+    "frames": [
+        {
+            "filename": "knight_f_hit_anim_f0",
+            "frame": {
+                "w": 16,
+                "h": 28,
+                "x": 1,
+                "y": 1
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "knight_f_idle_anim_f0",
+            "frame": {
+                "w": 16,
+                "h": 28,
+                "x": 18,
+                "y": 1
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "knight_f_idle_anim_f1",
+            "frame": {
+                "w": 16,
+                "h": 28,
+                "x": 1,
+                "y": 30
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "knight_f_idle_anim_f2",
+            "frame": {
+                "w": 16,
+                "h": 28,
+                "x": 18,
+                "y": 30
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "knight_f_idle_anim_f3",
+            "frame": {
+                "w": 16,
+                "h": 28,
+                "x": 35,
+                "y": 1
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "knight_f_run_anim_f0",
+            "frame": {
+                "w": 16,
+                "h": 28,
+                "x": 35,
+                "y": 30
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "knight_f_run_anim_f1",
+            "frame": {
+                "w": 16,
+                "h": 28,
+                "x": 52,
+                "y": 1
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "knight_f_run_anim_f2",
+            "frame": {
+                "w": 16,
+                "h": 28,
+                "x": 52,
+                "y": 30
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "knight_f_run_anim_f3",
+            "frame": {
+                "w": 16,
+                "h": 28,
+                "x": 1,
+                "y": 59
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "knight_m_hit_anim_f0",
+            "frame": {
+                "w": 16,
+                "h": 28,
+                "x": 18,
+                "y": 59
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "knight_m_idle_anim_f0",
+            "frame": {
+                "w": 16,
+                "h": 28,
+                "x": 35,
+                "y": 59
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "knight_m_idle_anim_f1",
+            "frame": {
+                "w": 16,
+                "h": 28,
+                "x": 52,
+                "y": 59
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "knight_m_idle_anim_f2",
+            "frame": {
+                "w": 16,
+                "h": 28,
+                "x": 69,
+                "y": 1
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "knight_m_idle_anim_f3",
+            "frame": {
+                "w": 16,
+                "h": 28,
+                "x": 69,
+                "y": 30
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "knight_m_run_anim_f0",
+            "frame": {
+                "w": 16,
+                "h": 28,
+                "x": 69,
+                "y": 59
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "knight_m_run_anim_f1",
+            "frame": {
+                "w": 16,
+                "h": 28,
+                "x": 86,
+                "y": 1
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "knight_m_run_anim_f2",
+            "frame": {
+                "w": 16,
+                "h": 28,
+                "x": 86,
+                "y": 30
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "knight_m_run_anim_f3",
+            "frame": {
+                "w": 16,
+                "h": 28,
+                "x": 86,
+                "y": 59
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        }
+    ],
+    "meta": {
+        "description": "Atlas generado con Atlas Packer Gamma V2",
+        "web": "https://gammafp.github.io/atlas-packer-phaser/"
+    }
+}

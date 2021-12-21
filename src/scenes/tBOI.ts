@@ -24,6 +24,9 @@ export default class tBOI extends Phaser.Scene
         walls.setScale(3);
         ground.setScale(3);
 
+        const knight = this.add.sprite(128, 128, 'knight', 'knight_m_idle_anim_f0');
+        knight.setScale(3);
+
         // const debugGraphics = this.add.graphics().setAlpha(0.7);            // comment/uncomment 
         // walls.renderDebug(debugGraphics,{                                   // here
         //     tileColor: null,                                                // for
@@ -32,5 +35,6 @@ export default class tBOI extends Phaser.Scene
         // })                                                                  // graphics
 
         console.log("</game>");
+
     }
 }
