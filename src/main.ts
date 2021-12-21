@@ -5,8 +5,8 @@ import tBOI from './scenes/tBOI'
 
 const config: Phaser.Types.Core.GameConfig = {
 	type: Phaser.AUTO,
-	width: 800,
-	height: 800,
+	width: 1200,
+	height: 720,
 	physics: {
 		default: 'arcade',
 		arcade: {

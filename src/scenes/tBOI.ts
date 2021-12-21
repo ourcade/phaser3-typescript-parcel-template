@@ -16,14 +16,20 @@ export default class tBOI extends Phaser.Scene
     {
         console.log("<game>");
         const map = this.make.tilemap({key: 'debug_dungeon'});
-        console.log("<game>");
-
         const tileset = map.addTilesetImage('debug_dungeon2', 'tiles');
-        console.log("<game>");
+        const ground = map.createLayer("ground", tileset);
+        const walls = map.createLayer("walls", tileset);
+        walls.setCollisionByProperty({collides:true});
 
-        map.createLayer("ground", tileset);
-        map.createLayer("walls", tileset);
-        console.log("<game>");
+        walls.setScale(3);
+        ground.setScale(3);
+
+        // const debugGraphics = this.add.graphics().setAlpha(0.7);            // comment/uncomment 
+        // walls.renderDebug(debugGraphics,{                                   // here
+        //     tileColor: null,                                                // for
+        //     collidingTileColor: new Phaser.Display.Color(243,234,48,255),   // debug 
+        //     faceColor: new Phaser.Display.Color(40,39,37,255)               // collision
+        // })                                                                  // graphics
 
         console.log("</game>");
     }
