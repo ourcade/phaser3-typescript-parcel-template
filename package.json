@@ -19,7 +19,7 @@
 		"@typescript-eslint/eslint-plugin": "^2.29.0",
 		"@typescript-eslint/parser": "^2.29.0",
 		"eslint": "^6.8.0",
-		"minimist": ">=1.2.2",
+		"minimist": ">=1.2.6",
 		"parcel-plugin-clean-easy": "^1.0.2",
 		"parcel-plugin-static-files-copy": "^2.4.3",
 		"typescript": "^3.8.3"
