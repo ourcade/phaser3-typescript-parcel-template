@@ -1,3 +1,10 @@
+# 🚨 NOTE 🚨
+**October 2022**
+
+This template has been deprecated in favor of a more modern version using Vite. You can find it here: https://github.com/ourcade/phaser3-typescript-vite-template
+
+---
+
 ![phaser3-parceljs-template](https://user-images.githubusercontent.com/2236153/71606463-37a0da80-2b2e-11ea-9b5f-5d26ccc84f91.png)
 
 # Phaser 3 + TypeScript + Parcel Template
